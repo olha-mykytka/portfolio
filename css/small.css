@@ -1,0 +1,146 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+:root {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'DM Sans', monospace;
+    --lightWeight: 300;
+    --heavyWeight: 700;
+    --primaryColor: #f5e9e8;
+}
+
+nav {
+    position: sticky;
+    top: 0px;
+    background-color: var(--primaryColor);
+}
+nav ul {
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+nav a {
+    padding: 1rem .5rem;
+    display: block;
+    text-decoration: none;
+    color: rgb(64, 34, 34);
+    font-weight: var(--heavyWeight);
+}
+nav a:hover {
+    background-color: rgb(140, 92, 92);
+    color: rgb(255, 255, 255);
+}
+
+section#about {
+    background-color: rgb(182, 158, 158);
+    height: 100vh;
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+section#about h1 {
+    font-size: 2.5rem;
+}
+section#about h2 {
+    font-size: 1.5rem;
+    color: black;
+}
+div.theParent {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+div.theParent a {
+    flex-basis: 100%;
+    padding: 1rem 2vw;
+}
+section#projects {
+    background-color: #ffffff;
+    min-height: 100vh;
+    padding: 50px;
+    text-align: center;
+    
+}
+section#projects a {
+    text-decoration: none;
+    color:rgb(64, 34, 34);
+}
+section#projects figure {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    
+}
+section#projects img {
+    width: 100%;
+}
+
+section#projects figcaption {
+    font-size: 1rem;
+    color: rgb(64, 34, 34);
+    font-style: italic;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+
+}
+
+section#contact {
+    background-color: rgb(222, 197, 197);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section#contact h2 {
+    color: black;
+    text-align: center;
+}
+
+section#contact ul {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+section#contact li {
+    list-style-type: none;
+
+}
+
+section#contact a {
+    color:rgb(64, 34, 34);
+    text-decoration: none;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+section#contact a img {
+    height : 50px;
+    display: block;
+    text-align: center;
+    width: 100%;
+
+}
+section#contact a:hover {
+    text-decoration: underline;
+    transform: translateY(8px);
+}
+
+footer p, footer span {
+    font-size: 1rem;
+    text-align: center;
+    color:black;
+    padding: 1rem 0;
+
+}
